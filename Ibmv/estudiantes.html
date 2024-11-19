@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00000022;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: linear-gradient(45deg, #ff0000, #ff9900, #ff00ff);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #c41f1f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #710909;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Estudiantes</h2>
+    <form action="basestudy.php" method="POST">
+        <label for="Nombre"></label>
+        <input type="text" name="Nombre" placeholder="Nombre" required id="Nombre"><br>
+        <label for="Apellidop"></label>
+        <input type="text" name="Apellidop" placeholder="Apellido Paterno" required id="Apellidop"><br>
+        <label for="Apellidom"></label>
+        <input type="text" name="Apellidom" placeholder="Apellido Materno" required id="Apellidom"><br>
+        <label for="Carrera"></label>
+        <input type="text" name="Carrera" placeholder="Carrera" required id="Carrera"><br>
+        <label for="correo"></label>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required id="correo"><br>
+        <label for="Nfecha"></label>
+        <input type="date" name="Nfecha" placeholder="Fecha de Nacimiento" required id="Nfecha"><br>
+        <button type="submit" class="btn">Registrar</button>
+    </form>
+</div>
+
+</body>
+</html>

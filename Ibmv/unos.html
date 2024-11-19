@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Aulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #97d9d88b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: linear-gradient(45deg, #ff9a9e, #fbd3e9, #ffdde1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #b02a62;
+            
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #f500c05e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #ee50be;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Aulas</h2>
+    <form action="base.php" method="POST">
+        <label for="Numaulas"></label>
+        <input type="number" name="Numaulas" placeholder="Número de aulas" id="Numaulas" required><br>
+        <label for="Capacidad"></label>
+        <input type="number" name="Capacidad" placeholder="Capacidad" required id="Capacidad"><br>
+        <label for="Ubicacion"></label>
+        <input type="text" name="Ubicacion" placeholder="Ubicación" required id="Ubicacion"><br>
+        <label for="Equipamiento"></label>
+        <input type="text" name="Equipamiento" placeholder="Equipamiento" required id="Equipamiento"><br>
+        <button type="submit" class="btn" value="Registro">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>

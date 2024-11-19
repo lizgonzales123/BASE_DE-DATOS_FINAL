@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personal Administrativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfff6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+
+            margin: 0;
+        }
+        .container {
+           background-color: rgba(0, 0, 0, 0.331);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.023);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #fff7f7;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #69c726;
+        }
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="img/administrativo.jfif" alt="">
+    <h2>Registro de Personal Administrativo</h2>
+    <form action="registrop.php" method="POST">
+        <label for="Nombres"></label>
+        <input type="text" name="Nombres" placeholder="Nombres" required id="Nombres"><br>
+        <label for="Apellidop"></label>
+        <input type="text" name="Apellidop" placeholder="Apellido Paterno" required id="Apellidop"><br>
+        <label for="Apellidom"></label>
+        <input type="text" name="Apellidom" placeholder="Apellido Materno" required id="Apellidom"><br>
+        <label for="Cargo"></label>
+        <input type="text" name="Cargo" placeholder="Cargo" required id="Cargo"><br>
+        <label for="correo"></label>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required id="correo"><br>
+        
+        <button type="submit" class="btn">Registrar</button>
+    </form>
+</div>
+
+</body>
+</html>

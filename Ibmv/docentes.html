@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Docentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: linear-gradient(45deg, #1e3b724d, #2a529844);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Docentes</h2>
+    <form action="basedocent.php" method="POST">
+        <label for="Nombre"></label>
+        <input type="text" name="Nombre" placeholder="Nombre" required id="Nombre"><br>
+        <label for="Apellidop"></label>
+        <input type="text" name="Apellidop" placeholder="Apellido Paterno" required id="Apellidop"><br>
+        <label for="Apellidom"></label>
+        <input type="text" name="Apellidom" placeholder="Apellido Materno" required id="Apellidom"><br>
+        <label for="Asignatura"></label>
+        <input type="text" name="Asignatura" placeholder="Asignatura" required id="Asignatura" ><br>
+        <label for="correo"></label>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required id="correo"><br>
+        <label for="Telefono"></label>
+        <input type="tel" name="Telefono" placeholder="Teléfono" required id="Telefono"><br>
+        <button type="submit" class="btn">Registrar</button>
+    </form>
+</div>
+
+</body>
+</html>

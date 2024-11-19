@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Carrera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.457);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #413566;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #33275f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Carrera</h2>
+    <form action="baseca.php" method="POST">
+        <label for="Nomcarrera"></label>
+        <input type="text" name="Nomcarrera" placeholder="Nombre de la carrera" required id="Nomcarrera"><br>
+        <label for="Duracion"></label>
+        <input type="number" name="Duracion" placeholder="Duración" required id="Duracion"><br>
+        <label for="Numaterias"></label>
+        <input type="number" name="Numaterias" placeholder="Número de materias" required id="Numaterias"><br>
+        <label for="Coordinadorc"></label>
+        <input type="text" name="Coordinadorc" placeholder="Coordinador de carrera" required id="Coordinadorc"><br>
+        <button type="submit" class="btn" value="Registrar">Registrar</button>
+    </form>
+</div>
+
+</body>
+</html>
